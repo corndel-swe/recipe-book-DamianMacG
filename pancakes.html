@@ -45,16 +45,16 @@
         </ol>
     </section>
     <section>
-        <h2>Rate and Comment</h2>
-        <form id="pancakeFeedbackForm" onsubmit="handleSubmit(event)">
-            <label for="name">Your Name:</label><br>
-            <input type="text" id="name" name="name" required placeholder="Enter your name"><br><br>
+        <h2>Rate and Comment on Pancakes</h2>
+        <form id="pancakeFeedbackForm">
+            <label for="pancakeName">Your Name:</label><br>
+            <input type="text" id="pancakeName" name="name" required placeholder="What do you call yourself?"><br><br>
 
-            <label for="email">Your Email:</label><br>
-            <input type="email" id="email" name="email" required placeholder="Enter your email"><br><br>
+            <label for="pancakeEmail">Your Email:</label><br>
+            <input type="email" id="pancakeEmail" name="email" required placeholder="How can we reach you?"><br><br>
 
-            <label for="rating">Rate the recipe:</label><br>
-            <select id="rating" name="rating" required>
+            <label for="pancakeRating">Rate the recipe:</label><br>
+            <select id="pancakeRating" name="rating" required>
                 <option value="">Select a rating</option>
                 <option value="1">1 Star</option>
                 <option value="2">2 Stars</option>
@@ -63,12 +63,13 @@
                 <option value="5">5 Stars</option>
             </select><br><br>
 
-            <label for="comment">Your Comment:</label><br>
-            <textarea id="comment" name="comment" rows="4" required placeholder="Enter your comment"></textarea><br><br>
+            <label for="pancakeComment">Your Comment:</label><br>
+            <textarea id="pancakeComment" name="comment" rows="4" required placeholder="Enter your comment..."></textarea><br><br>
 
             <button type="submit">Submit</button>
         </form>
     </section>
+
 
 </main>
 
