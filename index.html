@@ -3,30 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Recipe Book</title>
+    <title>My Magical Recipe Book</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 <header>
-    <nav>
-        <a href="about.html">About Me</a> |
+    <nav id="nav">
+        <a href="about.html">About Me</a>
         <a href="contact.html">Contact</a>
     </nav>
     <h1>Welcome to My Recipe Page Masterclass!</h1>
     <h5>(I didn't choose the logo)</h5>
-    <img src="rb-logo.png" alt="Carrot with a face" height="400px">
-
+    <img id="main-img" src="rb-logo.png" alt="Carrot with a face">
 </header>
 
 <main>
-    <section>
+    <section id="recipes-main">
         <h2>Recipes</h2>
         <ul>
-            <li><a href="spaghetti-carbonara.html">Spaghetti Carbonara</a></li>
-            <li><a href="pancakes.html">Pancakes</a></li>
-            <li><a href="tacos.html">Tacos</a></li>
-            <li><a href="Egg.html">Boil 'n Egg</a></li>
+            <li>
+                <article>
+                    <h3>Spaghetti Carbonara</h3>
+                    <a href="spaghetti-carbonara.html">
+                        <img src="spag-carb.jpeg" alt="Spaghetti Carbonara">
+                    </a>
+                </article>
+            </li>
+            <li>
+                <article>
+                    <h3>Pancakes</h3>
+                    <a href="pancakes.html">
+                        <img src="pancakes.jpg" alt="Pancakes">
+                    </a>
+                </article>
+            </li>
+            <li>
+                <article>
+                    <h3>Tacos</h3>
+                    <a href="tacos.html">
+                        <img src="tacos.jpg" alt="Tacos">
+                    </a>
+                </article>
+            </li>
+            <li>
+                <article>
+                    <h3>Boil 'n Egg</h3>
+                    <a href="Egg.html">
+                        <img src="boiled-egg.jpg" alt="Boil 'n Egg">
+                    </a>
+                </article>
+            </li>
         </ul>
-        </section>
+    </section>
 </main>
 
 <footer>

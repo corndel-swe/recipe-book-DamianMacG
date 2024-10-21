@@ -4,24 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pancakes Recipe</title>
-
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
 <header>
     <nav id="nav">
-        <a href="index.html">Back to main page</a> |
-        <a href="about.html">About Me</a> |
+        <a href="index.html">Back to main page</a>
+        <a href="about.html">About Me</a>
         <a href="contact.html">Contact</a>
     </nav>
-    <img src="pancakes.jpg" alt="Picture of pancakes" height="400px" >
+    <img class="main-img" src="pancakes.jpg" alt="Picture of pancakes">
     <h1>Pancakes</h1>
 </header>
 
 <main>
     <section id="ingredients">
         <h2>Ingredients</h2>
-        <ul>
+        <ul class="ingredients-list">
             <li>1 cup all-purpose flour</li>
             <li>2 tbsp sugar</li>
             <li>1 tsp baking powder</li>
@@ -36,9 +36,9 @@
 
     <section id="instructions">
         <h2>Instructions</h2>
-        <ol>
+        <ol class="instructions-list">
             <li>In a bowl, mix together flour, sugar, baking powder, baking soda, and salt. Please don't make a mess...</li>
-            <li>In a separate bowl, whisk together buttermilk, egg, and melted buttuh.</li>
+            <li>In a separate bowl, whisk together buttermilk, egg, and melted butter.</li>
             <li>Pour the wet ingredients into the dry ingredients and stir just until smooth and silky.</li>
             <li>Heat a skillet over medium heat and lightly grease it.</li>
             <li>Scoop 1/4 cup of batter onto the skillet for each pancake. Cook until bubbles form on the surface and the edges look set.</li>
@@ -46,17 +46,18 @@
             <li>Top with your favorite toppings and let's goooooooooo!!!!!.</li>
         </ol>
     </section>
+
     <section id="comments">
         <h2>Rate and Comment on Pancakes</h2>
         <form id="pancakeFeedbackForm">
             <label for="pancakeName">Your Name:</label><br>
-            <input type="text" id="pancakeName" name="name" required placeholder="What do you call yourself?"><br><br>
+            <input type="text" id="pancakeName" name="name" required placeholder="What do you call yourself?" class="input-field"><br><br>
 
             <label for="pancakeEmail">Your Email:</label><br>
-            <input type="email" id="pancakeEmail" name="email" required placeholder="How can we reach you?"><br><br>
+            <input type="email" id="pancakeEmail" name="email" required placeholder="How can we reach you?" class="input-field"><br><br>
 
             <label for="pancakeRating">Rate the recipe:</label><br>
-            <select id="pancakeRating" name="rating" required>
+            <select id="pancakeRating" name="rating" required class="input-field">
                 <option value="">Select a rating</option>
                 <option value="1">1 Star</option>
                 <option value="2">2 Stars</option>
@@ -66,12 +67,12 @@
             </select><br><br>
 
             <label for="pancakeComment">Your Comment:</label><br>
-            <textarea id="pancakeComment" name="comment" rows="4" required placeholder="Enter your comment..."></textarea><br><br>
+            <textarea id="pancakeComment" name="comment" rows="4" required placeholder="Enter your comment..." class="textarea-field"></textarea><br><br>
 
-            <button type="submit">Submit</button>
+            <button id="button" type="submit">Submit</button>
+
         </form>
     </section>
-
 
 </main>
 

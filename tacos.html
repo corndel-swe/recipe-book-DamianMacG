@@ -4,23 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tacos Recipe</title>
-
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 <header>
     <nav id="nav">
-        <a href="index.html">Back to main page</a> |
-        <a href="about.html">About Me</a> |
+        <a href="index.html">Back to main page</a>
+        <a href="about.html">About Me</a>
         <a href="contact.html">Contact</a>
     </nav>
-    <img src="tacos.jpg" alt="Picture of tacos" height="400px" >
+    <img src="tacos.jpg" alt="Picture of tacos" class="main-img" >
     <h1>Tacos</h1>
 </header>
 
 <main>
     <section id="ingredients">
         <h2>Ingredients</h2>
-        <ul>
+        <ul class="ingredients-list">
             <li>500g ground beef or chicken</li>
             <li>1 onion, chopped</li>
             <li>2 cloves garlic, minced</li>
@@ -36,26 +36,27 @@
 
     <section id="instructions">
         <h2>Instructions</h2>
-        <ol>
+        <ol class="instructions-list">
             <li>Cook the ground beef/chicken in a skillet over medium heat until browned. Try not to eat it straight from the pan!</li>
             <li>Add chopped onion and garlic, and sauté until soft and fragrant (ooooh fancy).</li>
             <li>Stir in taco seasoning and a bit of water. Simmer for 5 minutes (the smell should attract your neighbours by now).</li>
-            <li>Warm up your taco shells, obviously</li>
+            <li>Warm up your taco shells, obviously.</li>
             <li>Fill each taco shell with the beef/chicken mixture, and top with lettuce, tomatoes, cheese, sour cream, and salsa.</li>
-            <li>Eat as fast as possible while trying to avoid serious mouth burning</li>
+            <li>Eat as fast as possible while trying to avoid serious mouth burning.</li>
         </ol>
     </section>
+
     <section id="comments">
         <h2>Rate and Comment on Tacos</h2>
         <form id="tacoFeedbackForm">
             <label for="tacoName">Your Name:</label><br>
-            <input type="text" id="tacoName" name="name" required placeholder="What do you call yourself?"><br><br>
+            <input type="text" id="tacoName" name="name" required placeholder="What do you call yourself?" class="input-field"><br><br>
 
             <label for="tacoEmail">Your Email:</label><br>
-            <input type="email" id="tacoEmail" name="email" required placeholder="How can we reach you?"><br><br>
+            <input type="email" id="tacoEmail" name="email" required placeholder="How can we reach you?" class="input-field"><br><br>
 
             <label for="tacoRating">Rate the recipe:</label><br>
-            <select id="tacoRating" name="rating" required>
+            <select id="tacoRating" name="rating" required class="input-field">
                 <option value="">Select a rating</option>
                 <option value="1">1 Star</option>
                 <option value="2">2 Stars</option>
@@ -65,13 +66,11 @@
             </select><br><br>
 
             <label for="tacoComment">Your Comment:</label><br>
-            <textarea id="tacoComment" name="comment" rows="4" required placeholder="Enter your comment..."></textarea><br><br>
+            <textarea id="tacoComment" name="comment" rows="4" required placeholder="Enter your comment..." class="textarea-field"></textarea><br><br>
 
-            <button type="submit">Let's Taco 'bout it!</button>
+            <button id="button" type="submit">Let's Taco 'bout it!</button>
         </form>
     </section>
-
-
 </main>
 
 <footer>
